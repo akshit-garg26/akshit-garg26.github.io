@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Gloves</title>
+    <link rel="shortcut icon" href="./assets/glove.png" type="image/x-icon">
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <!-- <div id="info_firebase">
+        <h3>Firebase</h3>
+        <br>
+        <p class="mode_firebase mode_overall">Mode: User Interaction Mode (Default)</p>
+        <br>
+        <p class="mode_firebase menu_overall">Menu: Sentence Mode (Default)</p>
+        <br>
+        <p class="mode_firebase input_overall">Input Button: None (Default)</p>
+        <br>
+        <button id="button" onclick="show_internal_working()">Show Internal Working</button>
+    </div> -->
+<div id = 'site'>
+    <div id="overall">
+    <div id="info_internal">
+        <div class="interface">
+            <h5 >Glove Simulator</h1>
+        </div>
+        <br><br>
+        <div class="layer">
+            <p class="mode_internal mode_overall">Mode: User Interaction Mode</p>
+        </div>
+        <br>
+        <!-- <div class="layer">
+            <p class="menu_internal menu_overall">Menu: Sentence Menu (Default)</p>
+        </div> -->
+        <div id="menus">
+            <p class="menu_box menu1" style="background-color: #196d77; color: #edf6f9; border: 3px solid #edf6f9">Sentence</p>
+            <p class="menu_box menu2">Word</p>
+            <p class="menu_box menu3">Alphabet</p>
+            <p class="menu_box menu4">Digit</p>
+        </div>
+        <br>
+        <div class="layer">
+            <p class="input_internal input_overall">Input Button: 0</p>
+        </div>
+    </div>
+    <br><br><br>
+    <div id="virtual_glove">
+        <div class="input_buttons">
+            <div class="toprow row">
+                <button class="btn" id="button1">1</button>
+                <button class="btn" id="button3">3</button>
+                <button class="btn" id="button5">5</button>
+                <button class="btn" id="button7">7</button>
+            </div>
+
+            <div class="bottomrow row">
+                <button class="btn" id="button2">2</button>
+                <button class="btn" id="button4">4</button>
+                <button class="btn" id="button6">6</button>
+                <button class="btn" id="button8">8</button>
+            </div>
+
+            <div class="shifts row">
+                <button class="btn" id="buttonS1">Shift1</button>
+                <button class="btn" id="buttonS2">Shift2</button>
+            </div>
+
+        </div>
+        <div class="mode_button">
+            <button class="btn" id="buttonM">Mode</button>
+            <button class="btn_faltu" style="visibility: hidden;" id="buttonM">Mode</button>
+        </div>
+
+    </div>
+    <br><br>
+    <div id="image">
+        <table>
+            <thead>
+                <th>S. No.</th>
+                <th>Mode</th>
+                <th colspan="4">Menus</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1.</th>
+                    <th>User Interaction</th>
+                    <td>Sentence</td>
+                    <td>Word</td>
+                    <td>Alphabet</td>
+                    <td>Digit</td>
+                </tr>
+                <tr>
+                    <th>2.</th>
+                    <th>Chat Mode</th>
+                    <td>Sentence</td>
+                    <td>Word</td>
+                    <td>Alphabet</td>
+                    <td>Digit</td>
+                </tr>
+                <tr>
+                    <th>3.</th>
+                    <th>Virtual Keyboard</th>
+                    <td>Command</td>
+                    <td>Word</td>
+                    <td>Alphabet</td>
+                    <td>Digit</td>
+                </tr>
+                <tr>
+                    <th>4.</th>
+                    <th>Voice Command</th>
+                    <td>Navigation</td>
+                    <td>Interaction</td>
+                    <td>Information</td>
+                    <td>Utility</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div id = "help">
+        <button id="button_help" onclick="show_help()">Show Help</button>
+        <span id="help_box" style="display: none;">
+            <p>Shift1 - Shift</p>
+            <p>Shift2 - Control</p>
+            <p>Mode - Fullstop</p>
+            <p>Numbers are the same</p>
+            <br>
+            <p>Double tap Mode button with any shift combination to change Mode</p>
+            <p>Single tap Mode button with any shift combination to change Menu</p>
+            <br>
+            <!-- <div id="image">
+                <img src="menus.png" alt="" srcset="">
+            </div> -->
+        </span>
+    </div>
+</div>
+    <script src="website.js"></script>
+</body>
+
+</html>
